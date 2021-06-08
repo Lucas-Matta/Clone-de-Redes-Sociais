@@ -1,0 +1,240 @@
+/*************** CLASSES AUXILIARES ***************/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+.center{
+	max-width: 1100px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+.clear{clear: both;}
+
+/*************** HEADER ***************/
+/**************************************/
+
+header{
+	background-color: #0C0032;
+	padding: 8px 0;
+}
+.logo{
+	float: left;
+	color: white;
+}
+.logo h2{
+	margin-top: 14px;
+	font-size: 25px;
+	font-weight: normal;
+}
+.form-login{
+	float: right;
+}
+.form-element{
+	display: inline-block;
+	margin-right: 15px;
+}
+.form-element p{
+	color: white;
+	font-size: 14px;
+}
+.form-element input[type=email],
+.form-element input[type=password]{
+	margin-top: 4px;
+	height: 22px;
+	padding-left: 3px;
+	border: 0 none;
+    outline: 0;
+}
+.form-element input[type=submit]{
+	cursor: pointer;
+	border: 0;
+	background-color: #190061;
+	color: white;
+	padding: 3px 5px;
+	border: 2px solid #240090;
+}
+.form-element input[type=submit]:hover{
+	background-color: #240090;
+}
+
+/*************** MAIN ***************/
+/**************************************/
+
+.main{
+	background: linear-gradient(white, #D3D8E8);
+	padding: 40px 0;
+}
+.main p{
+	color: #0e385f;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 450px;
+}
+.img-pessoas{
+	float: left;
+	width: 60%;
+}
+.img-pessoas img{
+	max-width: 100%;
+}
+.abrir-conta{
+	width: 40%;
+	float: right;
+}
+.abrir-conta h2{
+	color: black;
+	font-size: 35px;
+}
+.abrir-conta h3{
+	color: rgb(30,30,30);
+	font-size: 19px;
+	margin-top: 8px;
+	font-weight: normal;
+}
+form.criar-conta{
+	margin-top: 10px;
+}
+.w50{
+	width: 50%;
+	float: left;
+	padding: 0 5px;
+}
+.w100{
+	width: 100%;
+	float: left;
+	padding: 0 5px;
+}
+form.criar-conta input{
+	width: 100%;
+}
+form.criar-conta input[type=email],
+form.criar-conta input[type=text],
+form.criar-conta input[type=password]{
+	height: 40px;
+	padding-left: 10px;
+	font-size: 20px;
+	border: 1px solid #282828;
+	border-radius: 8px;
+    outline: 0;
+}
+form.criar-conta input[type=submit]{
+	height: 40px;
+	background-color: #282828;
+	color: white;
+	cursor: pointer;
+	border: 0;
+	max-width: 200px;
+	font-size: 19px;
+	margin-top: 8px;
+}
+form.criar-conta input[type=submit]:hover{
+	opacity: 0.9;
+}
+
+/*************** MAIN NASCIMENTO E SEXO ***************/
+/***********************************************/
+
+.data-nascimento{
+	color: #90949c !important;
+	font-weight: bold !important;
+	font-size: 16px !important;
+	margin-bottom: 5px !important;
+	padding-top: 10px !important;
+}
+
+form .w100 h2{
+	color: #1d2129;
+	font-size: 22px;
+	margin-top: 10px;
+}
+form select.nascimento{
+	float: left;
+	margin-top: 5px;
+	padding: 5px 5px;
+}
+
+.input-radio{
+	width: 33.%;
+	float: left;
+	margin: 8px 5px;
+}
+
+.input-radio h2{
+	display: inline-block;
+}
+.input-radio input[type=radio]{
+	width: auto !important;
+	display: inline-block;
+}
+
+/*************** LINGUAS ******************/
+/***********************************************/
+
+section .linguas{
+	padding: 30px 0;
+	background-color: white;
+}
+section.linguas .center{
+	padding-bottom: 10px;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-bottom: 1px solid #ccc;
+}
+section.linguas a{
+	color: #365899;
+	text-decoration: none;
+	font-size: 12px;
+	padding-right: 15px;
+}
+section.linguas a.select-lingua{
+	color: #737373;
+}
+
+
+/*** MEDIAS QUERIRES ***/
+
+
+@media screen and (max-width: 768px){
+	.logo{
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+	form .form-login{
+		width: 100%;
+		text-align: center;
+		float: none;
+		display: inline-block;
+		margin-top: 17px;
+	}
+	form.form-login .form-element{
+		display: block;
+		margin-top: 5px;
+		margin-right: 140px;
+		padding-bottom: 5px;
+	}
+	form.form-element p{
+		color: white;
+		font-size: 14px;
+	}
+	form.form-element input[type=email],
+	form.form-element input[type=password]{
+		margin-top: 4px;
+		height: 22px;
+		padding-left: 3px;
+		border: 0 none;
+    	outline: 0;
+    	width: 100%;
+    	max-width: 320px;
+	}
+	.img-pessoas{
+		display: none;
+	}
+	.abrir-conta{
+		width: 100%;
+	}
+}
